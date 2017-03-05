@@ -86,7 +86,7 @@ $(document).ready(function() {
 
 
  /**
-  * [destinationhange]
+  * [destinationChange]
   */
  function destinationChange() {
 
