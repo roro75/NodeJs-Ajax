@@ -9,7 +9,7 @@ Communication NodeJs / ExpressJs  - Ajax - MongoDB
 
 MongoDB
 ```sh
- ./mongoimport --db sncf --collection tgv --file regularite-mensuelle-tgv.json.json --jsonArray 
+ ./mongoimport --db sncf --collection tgv --file regularite-mensuelle-tgv.json --jsonArray 
 ```
 
 
