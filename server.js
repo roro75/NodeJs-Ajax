@@ -2,7 +2,7 @@
  * Send Ajax information with NodeJs / ExpressJs
  * [nodejs server] Ajax
  * https://github.com/roro75/
- * version 1 - 20170305 * 
+ * version 1 - 20170305 *
  */
 
 var express = require('express');
@@ -31,7 +31,7 @@ app.set('view engine', 'pug');
 
 app.get('/', function (req,res) {
 
-        res.render('index', { titre:'Depart', requete:requete});
+        res.render('index', { titre:'Depart'});
 });
 
 app.get('/depart', function(req, res){
@@ -40,7 +40,7 @@ app.get('/depart', function(req, res){
     var collection = db.get().collection('tgv');
     collection.distinct('fields.depart', function(err, docs){
         docs.sort();
-        res.render('depart', { titre:'Depart', depart:docs, requete:requete});
+        res.render('depart', { titre:'Depart', depart:docs});
 
     });
 });
@@ -85,8 +85,8 @@ app.get('/affichage', function(req, res, next){
 
 // 404 response
 app.use(function(req, res, next) {
-  res.status(404).render('404.pug', {
-    documentTitle: 'Document non trouvé (Erreur 404)'
+  res.status(404).render('404', {
+    //documentTitle: 'Document non trouvé (Erreur 404)'
   });
 });
 
