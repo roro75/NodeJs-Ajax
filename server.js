@@ -40,7 +40,7 @@ app.get('/depart', function(req, res){
     var collection = db.get().collection('tgv');
     collection.distinct('fields.depart', function(err, docs){
         docs.sort();
-        res.render('depart', { titre:'Depart', depart:docs});
+        res.render('depart', { titre:'Départ', depart:docs});
 
     });
 });
