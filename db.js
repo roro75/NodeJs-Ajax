@@ -15,7 +15,7 @@ exports.connect = function(dbConfig, done) {
       return done(err);
     }
     
-    db.authenticate("user", "123456", function(err, res) {
+    db.authenticate("user", "password", function(err, res) {
       state.db = db;
       done();
     });
