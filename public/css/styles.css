@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    padding-top: 70px;
+    overflow: hidden;
+}
+.navbar-brand {
+    background: rgba(0, 0, 0, 0) url("../img/logo.png") no-repeat scroll 0 0;
+    height: 47px;
+    width: 100px;
+}
+.navbar {
+    background: #333;
+}
+p {
+    text-align: justify;
+    line-height: 35px;
+}
+h1 {
+    color: #9c3879
+}
+h2 {
+    font-size: 20px;
+    color: #9c3879;
+}
+h3 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+}
+mark {
+    background: #fce3fa;
+    color: #b0588d;
+    font-size: 18px;
+}
+.wrapper {
+    display: none;
+}
+.form-control {
+    color: #337ab7;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-control:first-child {}
+.options {
+    background: #9c3879;
+    border-radius: 10px 10px 10px;
+    margin: 10px 0;
+    color: white;
+}
+.informations {
+    background: #fbe9f5;
+    border-radius: 10px 10px 10px;
+    margin: 10px 0;
+}
+tbody {
+    text-align: justify;
+}
+.doddgerblue {
+    color: dodgerblue;
+    font-size: 20px;
+}

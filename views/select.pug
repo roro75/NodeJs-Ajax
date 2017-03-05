@@ -1,0 +1,6 @@
+.col-lg-12.col-md-12.col-xs-12 
+    .form-group
+        select(class='form-control', name='arrivee')
+            option(selected='selected',class='default') - dstination -
+            each val in depart
+                option(value= val)= val

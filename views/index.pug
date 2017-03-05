@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    include ../includes/nav.pug  
+    body
+    
+        // Page Content
+        .container
+          .row
+            .col-lg-12.text-center
+                h1 SNCF
+                h2 Informations                
+                hr
+                p 
+                    mark
+                        | Technologies Ajax/jQuery, NodeJs, PugJs, MongoDB
+                .col-lg-12.wrapper
+                    .col-lg-12.options
+                        .col-lg-5.col-xs-12.depart
+                        .col-lg-5.col-xs-12.destination
+                        .col-lg-2.col-xs-12.dates
+                    .col-lg-12.informations   
+                        .col-lg-12.col-xs-12.affichage
+           
+            .row        
+            .col-lg-12.text-center           
+                hr
+                .btn.btn-primary.reservation Réservation 
+                 
+            hr
+            .copyright &copy roro Ifocop
+
+        
+        script(src='/js/jquery.js') 
+        script(src='/js/bootstrap.min.js')

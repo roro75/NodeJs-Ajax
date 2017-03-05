@@ -1,0 +1,6 @@
+h3 Départ
+.form-group
+    select(class='form-control', name='depart')
+        option(selected='selected',class='default') - gare de départ -
+        each val in depart
+            option(value= val)= val
